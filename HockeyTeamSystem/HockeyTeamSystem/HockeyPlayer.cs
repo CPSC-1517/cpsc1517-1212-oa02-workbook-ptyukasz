@@ -1,8 +1,8 @@
 ﻿namespace HockeyTeamSystem
 {
-    public class HockeyPlayer
+    public class HockeyPlayer : Person
     {
-        private string _fullName;
+        
         private int _primaryNumber;
         public PlayerPosition Position { get; private set; }
 
@@ -20,30 +20,11 @@
 
         }
         // Define a fully implemented property for FullName
-        public string FullName
-        {
-            get { return _fullName; }
-
-            private set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException("name required");
-
-                }
-                if (value.Trim().Length < 2)
-                {
-                    throw new ArgumentException("must be 3 char");
-
-                }
-                _fullName = value.Trim();
-            }
-
-        }
+     
         //Define a greedy constructor
-        public HockeyPlayer(string fullName, int primaryNumber, PlayerPosition position)
+        public HockeyPlayer(string fullName, int primaryNumber, PlayerPosition position) : base(fullName)
         {
-            FullName = fullName;
+         
             PrimaryNumber = primaryNumber;
             Position = position;
         }
@@ -51,7 +32,7 @@
         //Override the ToString() method to return a CSV
         public override string ToString()
         {
-            return $"{FullName} {PrimaryNumber},{Position}";
+            return $"{FullName},{PrimaryNumber},{Position}";
         }
 
     }

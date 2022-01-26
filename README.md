@@ -1,5 +1,5 @@
 # Basic Starter Kit
 
-## Owner your name
+## Peter Tyukasz
 
-alter this statement to indicate the usage of this repository
+Workbook CPSC1517 Repository

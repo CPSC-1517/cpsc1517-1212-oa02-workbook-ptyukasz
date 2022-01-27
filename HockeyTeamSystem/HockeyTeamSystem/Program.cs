@@ -4,8 +4,6 @@ using HockeyTeamSystem;
 
 //Test with valid FullName, PrimaryNumber, Position
 HockeyPlayer player1 = new("Connor McDavid", 97, PlayerPosition.Center);
-HockeyCoach coach = new("Guy Fieri", "Dec21");
-HockeyTeam team = new("Oilers", TeamDivision.Atlantic, coach);
 Console.WriteLine(player1); // The HocketPlayer.ToString() will be invoked indirectly
 
 // Test with invalid PrimaryNumber

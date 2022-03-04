@@ -1,5 +1,4 @@
-# Basic Starter Kit
+# 俺滴知识宝库
 
-## Peter Tyukasz
-
-Workbook CPSC1517 Repository
+## Wenling Lyu
+For repository

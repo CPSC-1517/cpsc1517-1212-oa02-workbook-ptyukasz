@@ -1,0 +1,13 @@
+﻿
+Write a obeject to JSON
+example: 
+
+{
+   "TeamName": "Edmonton Oilers",  //string
+   "Divison": 2,    //Enum
+   "HockeyPlayers": [
+                    {"Position":2,
+                     "Goals":10,
+                     "Assists":5},
+                     ] //Object
+}

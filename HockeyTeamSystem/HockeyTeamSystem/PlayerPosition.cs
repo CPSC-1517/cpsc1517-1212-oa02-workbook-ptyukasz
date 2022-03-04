@@ -2,10 +2,10 @@
 {
     public enum PlayerPosition
     {
-        Center,
-        LeftWing,
-        RightWing,
-        Defense,
-        Goalie
+        Center,//0
+        LeftWing,//1
+        RightWing,//2
+        Defense,//3
+        Goalie//4
     }
 }
